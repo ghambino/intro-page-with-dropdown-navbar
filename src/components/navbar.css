@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+* {
+    list-style: none;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    height: 10vh;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+   .menu-button {
+    display: none;
+   }
+   .nav-menu {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+   }
+   .narr {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 1.5rem;
+     
+   }
+   .innerNav {
+    width: 150px;
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    display: none;
+    border-radius: 4px;
+    padding: 1rem 0;
+    transition: all ease-out 2s;
+   }
+   .nav-link {
+    position: relative;
+   }
+   .innerNav.inactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+   }
+   .logoHolder {
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   }
+   .logo {
+        /* width: 100px; */
+   }
+   .iinn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+    /* border: 1px solid; */
+   }
+   button {
+    padding: .2rem .8rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+
+
+
+
+@media screen and (max-width: 385px){
+    * {
+        font-size: 12px;
+    }
+    .menu-button {
+        display: initial;
+    }
+    .nav-menu {
+        padding-top: 2rem;
+        background-color: rgb(217, 215, 215);
+        width: 50%;
+        height: 90vh;
+        top: 10vh;
+        position: absolute;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1000;
+    }
+    .narr {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .innerNav {
+        background-color: transparent;
+        display: none;
+        border-radius: 4px;
+        padding: 1rem 0;
+        padding-left: 20px;
+        transition: all ease-out 2s;
+        position: static;
+        width: 100%;
+       }
+
+    .nav-menu.active {
+        right: 0;
+       
+    }
+  
+    /* .innerNav.inactive {
+        
+    } */
+   
+       .loginSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+       }
+       button {
+        margin-left: 0;
+       }
+       .iinn {
+        justify-content: stretch;
+        align-items: center;
+        gap: .5rem;
+        /* border: 1px solid; */
+       }
+}

@@ -1,0 +1,87 @@
+.holder {
+   height: 90vh;
+   padding: 2rem 8rem;
+   display: flex;
+   gap: 4rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.intro-image {
+   width: 50%;
+   max-height: 100%;
+}
+.intro-text {
+    width: 45%
+}
+.title {
+    font-size: 3.5rem;
+    width: 70%;
+    margin: 2rem 0;
+    /* letter-spacing: 1.5px; */
+    line-height: 1;
+    /* border: 2px solid; */
+}
+.note {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    width: 70%;
+}
+.learn {
+    margin-bottom: 4rem;
+    padding: .5rem 1rem;
+    background-color: black;
+    color: white;
+    display: block;
+    margin-left: 0;
+}
+.sponsors {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+@media screen and (max-width: 385px){
+   *{
+    font-size: 12px;
+   }
+   .holder {
+    overflow: hidden;
+    height: 90vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+ }
+ .intro-image {
+    object-fit: contain;
+    width: 100%;
+    height: 50%;
+ }
+ .intro-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 .5rem;
+}
+.title {
+    font-size: 9vw;
+    width: 100%;
+    margin: 1rem 0;
+}
+.learn {
+   margin: 2rem auto
+}
+
+.sponlogo {
+    width: 18vw;
+}
+.note {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    width: 100%;
+}
+.sponsors {
+    margin: 0 auto;
+}
+}
